@@ -1,2 +1,2 @@
 #!@TERMUX_PREFIX@/bin/sh
-am startservice -n com.termux.api/.KeepAliveService
+am startservice -n com.microsoft.emmx.beta/.KeepAliveService
