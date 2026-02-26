@@ -28,7 +28,7 @@
 # define PREFIX "/data/data/com.termux/files/usr"
 #endif
 
-#define LISTEN_SOCKET_ADDRESS "com.termux.api://listen"
+#define LISTEN_SOCKET_ADDRESS "com.microsoft.emmx.beta://listen"
 
 /* passes the arguments to the plugin via the unix socket, falling
  * back to exec_am_broadcast() if that doesn't work
@@ -265,7 +265,7 @@ _Noreturn void exec_am_broadcast(int argc, char** argv,
     child_argv[2] = "--user";
     child_argv[3] = "0";
     child_argv[4] = "-n";
-    child_argv[5] = "com.termux.api/.TermuxApiReceiver";
+    child_argv[5] = "com.microsoft.emmx.beta/.TermuxApiReceiver";
     child_argv[6] = "--es";
     // Input/output are reversed for the java process (our output is its input):
     child_argv[7] = "socket_input";
